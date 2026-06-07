@@ -1,3 +1,9 @@
+local enc=[=[local p=Instance.new("Part",workspace)]=] -- YOUR SCRIPT
+local key="87vfjdywkw8362jguyfjdjklds8s674r93jm2hds78dfjjdsfahd7s6kldkjsgskshfgfh" -- ENCRYPTION KEY
+
+-- OUTPUT RUNS ON LUAU ONLY!!!
+
+
 local xor=function(data, key)
 	local out = {}
 	for i = 1, #data do
@@ -38,9 +44,4 @@ local turntoshittyascii=function(str)
 	end
 	return a
 end
-local annotest=Instance.new("StringValue",workspace)
-annotest.Value="local a"..anno().."=1"
-local enc=[=[local p=Instance.new("Part",workspace)]=]
-local key="87vfjdywkw8362jguyfjdjklds8s674r93jm2hds78dfjjdsfahd7s6kldkjsgskshfgfh"
-local v=Instance.new("StringValue",workspace)
-v.Value="--[[encrypted by shitfuscator v0.0.0.1]]--[=["..rs()..rs()..rs().."]=] local v0"..anno().."=getfenv()local v2"..anno().."=v0[string.reverse('"..turntoshittyascii("daol").."')..'"..turntoshittyascii("string").."'];function v1(d,k)local t"..anno().."={} for i=1,#d,2 do local a"..anno().."=tonumber(d:sub(i,i+1),16) local b"..anno().."=k:byte((((i+1)/2)-1)%#k+1) t[#t+1]=string.char(bit32.bxor(a,b)) end return table.concat(t)end local v4"..anno().."='"..turntoshittyascii(key).."';local v3"..anno().."='"..turntoshittyascii(xor(enc,key)).."';v2(v1(v3,v4))() ".."--[=["..rs()..rs()..rs().."]=]--wtf"
+print("--[[encrypted by shitfuscator v0.0.0.1]]--[=["..rs()..rs()..rs().."]=] local v0"..anno().."=getfenv()local v2"..anno().."=v0[string.reverse('"..turntoshittyascii("daol").."')..'"..turntoshittyascii("string").."'];function v1(d,k)local t"..anno().."={} for i=1,#d,2 do local a"..anno().."=tonumber(d:sub(i,i+1),16) local b"..anno().."=k:byte((((i+1)/2)-1)%#k+1) t[#t+1]=string.char(bit32.bxor(a,b)) end return table.concat(t)end local v4"..anno().."='"..turntoshittyascii(key).."';local v3"..anno().."='"..turntoshittyascii(xor(enc,key)).."';v2(v1(v3,v4))() ".."--[=["..rs()..rs()..rs().."]=]--wtf")
